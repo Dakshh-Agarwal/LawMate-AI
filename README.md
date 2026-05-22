@@ -8,6 +8,21 @@
 
 LawMate AI is a cutting-edge, AI-powered legal consultation assistant. Built with a modern React + Vite frontend and a high-performance FastAPI + PyTorch backend, it leverages Retrieval-Augmented Generation (RAG) and advanced Language Models to provide accurate, context-aware legal insights.
 
+## 🚨 The Problem (Pain Points)
+
+Navigating the legal landscape can be intimidating and expensive for the average individual. Common pain points include:
+- **High Costs**: Consulting with a legal professional typically involves steep hourly rates, making basic legal advice inaccessible to many.
+- **Complexity**: Legal jargon and massive document troves are difficult for non-experts to interpret and parse effectively.
+- **Time-Consuming**: Searching for relevant laws, past precedents, and rights takes hours or days of manual research.
+- **Lack of Immediate Help**: Wait times to simply get preliminary guidance can delay critical decision-making.
+
+## 💡 The Solution
+
+**LawMate AI** democratizes access to legal information by providing an intelligent, 24/7 conversational assistant. 
+- It instantly searches through vast databases of legal documents to retrieve highly relevant context.
+- It translates complex legalese into plain, understandable language.
+- It offers immediate preliminary consultations, potentially saving users significant time and money before they ever need to hire a human attorney.
+
 ## ✨ Features
 
 - **Conversational Interface**: Real-time chat interface for natural legal consultations.
@@ -58,6 +73,13 @@ Open another PowerShell terminal and run:
 ```
 *This script will install Node modules if they are missing and start the Vite development server on `http://localhost:5173`.*
 
+## 📖 Usage
+
+1. **Start a Consultation**: Open your browser to `http://localhost:5173` and start typing your legal query in the chat interface.
+2. **Contextual Retrieval**: LawMate AI will automatically retrieve relevant legal documents in the background based on your query.
+3. **Receive Insights**: Read the AI-generated responses tailored to your specific situation, complete with citations or references where applicable.
+4. **Generate Reports**: Ask the assistant to compile a detailed report (partial or final) summarizing your consultation, which you can save for future reference or share with a human attorney.
+
 ## 🛠️ Technology Stack
 
 **Frontend:**
@@ -74,6 +96,17 @@ Open another PowerShell terminal and run:
 - [FAISS](https://github.com/facebookresearch/faiss)
 - [Pandas](https://pandas.pydata.org/) & [NumPy](https://numpy.org/)
 - [Uvicorn](https://www.uvicorn.org/)
+
+## 🔮 Future Limitations & Roadmap
+
+While LawMate AI is a powerful tool, it currently has some limitations and areas for future improvement:
+- **Not Legal Advice**: LawMate AI provides legal *information*, not certified legal *advice*. It does not replace the counsel of a qualified attorney.
+- **Jurisdictional Boundaries**: Currently, the vector database may be limited to specific jurisdictions or subsets of law. Expanding the dataset to cover global/regional laws is a priority.
+- **Hallucination Risks**: Like all LLMs, there is a small risk of hallucinated precedents. Continuous model fine-tuning and strict RAG prompt-engineering are ongoing to mitigate this.
+- **Upcoming Features**:
+  - Multi-language support for international accessibility.
+  - User accounts and consultation history saving.
+  - Integration with live legal databases and APIs.
 
 ## 🤝 Contributing
 
